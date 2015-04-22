@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<script src="Cache/Cache.js"></script>
+	</head>
+<body>
+<script>
+	var obj = {};
+	
+	obj.id = 200;
+	
+	obj.name = 'Ahmed';
+	
+	obj.email = 'ahmedsaoud31@gmail.com';
+	
+	Cache.set('obj', obj);
+	
+	Cache.set('sign', true);
+	
+	Cache.set('num', 2015);
+	
+	Cache.set('arr', [1,2,3,4]);
+	
+	Cache.set('str', 'ahmed');
+	
+	alert(Cache.get('obj').id);
+	
+	alert(Cache.get('sign'));
+	
+	alert(Cache.get('arr')[1]);
+	
+	var temp = Cache.get(['str','sign']);
+	
+	alert(temp.str);
+	
+	alert(temp.sign);
+</script>
+<div>
+
+</div>
+</body>
+</html>
