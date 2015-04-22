@@ -75,7 +75,13 @@ javaScript Local Storge cache, Simple, Easy and Timed Cache
 
 	if(Cache.has('age'))
 		alert(Cache.get('age'));
-	
+		
+#### to check if browser support local storage or no 
+##### support
+
+	if(Cache.support())
+		alert('Your browser support local storage :)');
+
 ##### Have a nice Caching :)
 
 # طريقة الإستخدام
