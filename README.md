@@ -18,7 +18,12 @@ javaScript Local Storge cache, Simple, Easy and Timed Cache
 	
 	data = Cache.get('data');
 
-	
+##### to get some data from cache pass names as array like this
+
+	var data = Cache.get(['age','data']);
+	alert(data.age);
+	alert(data.data.name);
+
 ##### to get all data from cache use get function without any arguments
 	
 	var data = Cache.get();
@@ -103,6 +108,12 @@ javaScript Local Storge cache, Simple, Easy and Timed Cache
 	age = Cache.get('age');
 	
 	data = Cache.get('data');
+
+##### لجلب بيانات محددة في سطر وحيد مرر اسماء المتغيرات كمصفوفة لنفس الدالة كالتالي
+
+	var data = Cache.get(['age','data']);
+	alert(data.age);
+	alert(data.data.name);
 
 #### لجلب جميع البيانات المخزنة يمكنك استخدام نفس الدالة السابقة بدون أي وسائط
 
