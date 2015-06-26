@@ -56,6 +56,7 @@ var Cache = (function(){
 	*/
 	thisCache.has = function(name){
 		if(isSet(saveName+name)){
+			loadSettings();
 			if(CacheSettings[name].time === false || CacheSettings[name].time > getTime()){
 				return true;
 			}else{
